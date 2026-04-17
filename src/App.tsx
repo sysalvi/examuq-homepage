@@ -36,7 +36,7 @@ export default function App() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F36E22]"></span>
               </span>
-              Versi Terbaru v0.1.3
+              Versi Terbaru v0.1.5
             </div>
             
             <h1 className="text-[32px] md:text-[42px] font-[800] tracking-[-0.025em] text-[#0F172A] mb-[12px] leading-tight">
@@ -48,7 +48,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-[16px]">
               <a 
-                href="https://github.com/sysalvi/examuq/releases/download/v0.1.3/ExamUQ.Client_0.1.3_aarch64.dmg"
+                href="https://github.com/sysalvi/examuq/releases/download/v0.1.5/ExamUQ.Client_0.1.5_aarch64.dmg"
                 className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-transparent bg-[#9A275A] text-[#FFFFFF] hover:bg-[#801f4a] w-full sm:w-auto shadow-[0_4px_6px_-1px_rgba(154,39,90,0.2)]"
               >
                 <Command className="w-[20px] h-[20px] opacity-80 mr-[10px]" />
@@ -60,7 +60,7 @@ export default function App() {
               </a>
 
               <a 
-                href="https://github.com/sysalvi/examuq/releases/download/v0.1.3/ExamUQ.Client_portable.exe" 
+                href="https://github.com/sysalvi/examuq/releases/download/v0.1.5/ExamUQ.Client_0.1.5_x64_portable.exe" 
                 className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-[#E2E8F0] bg-[#FFFFFF] text-[#0F172A] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05),0_2px_4px_-2px_rgba(0,0,0,0.05)] hover:bg-[#F8FAFC] hover:border-[#F36E22]/50 w-full sm:w-auto"
               >
                 <LayoutGrid className="w-[20px] h-[20px] opacity-80 mr-[10px] text-[#F36E22]" />
@@ -141,7 +141,7 @@ export default function App() {
             <div className="flex flex-col items-center gap-[8px] mx-auto">
               <Info className="w-[20px] h-[20px] text-[#475569] opacity-70 mb-[4px]" />
               <div className="space-y-[4px]">
-                <p className="text-[13px] text-[#475569]">Jika mengalami kendala instalasi, hubungi pengawas atau tim IT admin sekolah Anda.</p>
+                <p className="text-[13px] text-[#475569]">Hubungi tim IT jika ada kendala.</p>
                 <p className="text-[13px] font-[500] opacity-80 text-[#475569] tracking-wide">Pastikan Anda selalu mengunduh aplikasi dari tautan resmi sekolah.</p>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function App() {
 
         {/* Footer */}
         <footer className="w-full text-center text-[#475569] mt-8">
-          <p className="text-[12px] opacity-70">&copy; {new Date().getFullYear()} ExamUQ. All rights reserved.</p>
+          <p className="text-[12px] opacity-70">&copy; {new Date().getFullYear()} ExamUQ by DISTEK-YUQD | Ummu'l Quro Depok</p>
         </footer>
       </div>
     </div>
