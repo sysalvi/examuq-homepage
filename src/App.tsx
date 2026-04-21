@@ -1,10 +1,10 @@
 import React from 'react';
-import { Download, Command, LayoutGrid, Info, ArrowRight } from 'lucide-react';
+import { Download, Command, LayoutGrid, Smartphone, Info, ArrowRight } from 'lucide-react';
 
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0F172A] font-sans selection:bg-[#E2E8F0]">
-      <div className="w-full max-w-[920px] mx-auto flex flex-col flex-grow justify-center px-6 md:px-0 py-[40px]">
+      <div className="w-full max-w-[1100px] mx-auto flex flex-col flex-grow justify-center px-6 md:px-0 py-[40px]">
         
         {/* Header */}
         <header className="w-full flex items-center justify-between mb:[24px] md:mb-[0px] md:absolute md:top-8 md:left-0 md:px-8">
@@ -46,29 +46,41 @@ export default function App() {
               Unduh aplikasi resmi ExamUQ Client untuk mengikuti ujian dengan aman dan lancar.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-[16px]">
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-[16px]">
               <a 
-                href="https://github.com/sysalvi/examuq/releases/download/v0.1.6/ExamUQ.Client_0.1.6_aarch64.dmg"
-                className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-transparent bg-[#9A275A] text-[#FFFFFF] hover:bg-[#801f4a] w-full sm:w-auto shadow-[0_4px_6px_-1px_rgba(154,39,90,0.2)]"
+                href="https://raw.githubusercontent.com/sysalvi/examuq/main/download/examuq-0.1.6-android.apk" 
+                className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-transparent bg-[#10B981] text-[#FFFFFF] shadow-[0_4px_6px_-1px_rgba(16,185,129,0.3)] hover:bg-[#059669] w-full sm:w-auto"
+              >
+                <Smartphone className="w-[20px] h-[20px] opacity-80 mr-[10px]" />
+                <div className="text-left flex-grow">
+                  <div className="text-[12px] opacity-80 mb-[2px] font-normal tracking-wide">Download untuk</div>
+                  <div className="leading-none">Android</div>
+                </div>
+                <ArrowRight className="w-4 h-4 ml-[8px] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-transform" />
+              </a>
+
+              <a 
+                href="https://raw.githubusercontent.com/sysalvi/examuq/e8df0f8e66ae4484ee69b928f3883b9af66868c2/download/examuq-0.1.6-macos.dmg"
+                className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-transparent bg-[#9A275A] text-[#FFFFFF] shadow-[0_4px_6px_-1px_rgba(154,39,90,0.3)] hover:bg-[#801f4a] w-full sm:w-auto"
               >
                 <Command className="w-[20px] h-[20px] opacity-80 mr-[10px]" />
                 <div className="text-left flex-grow">
-                  <div className="text-[12px] opacity-70 mb-[2px] font-normal tracking-wide">Download untuk</div>
+                  <div className="text-[12px] opacity-80 mb-[2px] font-normal tracking-wide">Download untuk</div>
                   <div className="leading-none">macOS</div>
                 </div>
                 <ArrowRight className="w-4 h-4 ml-[8px] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-transform" />
               </a>
 
               <a 
-                href="https://github.com/sysalvi/examuq/releases/download/v0.1.6/ExamUQ.Client_0.1.6_x64_portable.exe" 
-                className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-[#E2E8F0] bg-[#FFFFFF] text-[#0F172A] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05),0_2px_4px_-2px_rgba(0,0,0,0.05)] hover:bg-[#F8FAFC] hover:border-[#F36E22]/50 w-full sm:w-auto"
+                href="https://raw.githubusercontent.com/sysalvi/examuq/main/download/examuq-0.1.6-windows-portable.exe" 
+                className="group inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] text-[16px] font-[600] no-underline transition-colors border border-transparent bg-[#F36E22] text-[#FFFFFF] shadow-[0_4px_6px_-1px_rgba(243,110,34,0.3)] hover:bg-[#ea580c] w-full sm:w-auto"
               >
-                <LayoutGrid className="w-[20px] h-[20px] opacity-80 mr-[10px] text-[#F36E22]" />
+                <LayoutGrid className="w-[20px] h-[20px] opacity-80 mr-[10px]" />
                 <div className="text-left flex-grow">
-                  <div className="text-[12px] text-[#475569] mb-[2px] font-normal tracking-wide">Download untuk</div>
+                  <div className="text-[12px] opacity-80 mb-[2px] font-normal tracking-wide">Download untuk</div>
                   <div className="leading-none">Windows</div>
                 </div>
-                <ArrowRight className="w-4 h-4 ml-[8px] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-transform text-[#475569]" />
+                <ArrowRight className="w-4 h-4 ml-[8px] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-transform" />
               </a>
             </div>
           </section>
@@ -79,7 +91,34 @@ export default function App() {
               Cara Install
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-[24px]">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[24px]">
+              {/* Android Card */}
+              <div className="bg-[#FFFFFF] border border-[#E2E8F0] rounded-[12px] p-[28px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05),0_2px_4px_-2px_rgba(0,0,0,0.05)]">
+                <div className="flex items-center gap-[12px] mb-[20px] border-b border-[#E2E8F0] pb-[12px]">
+                  <h3 className="text-[18px] font-[700] uppercase tracking-[0.05em] text-[#0F172A] flex items-center gap-[8px]">
+                    <Smartphone className="w-5 h-5 text-[#10B981] opacity-90" />
+                    Panduan Android
+                  </h3>
+                </div>
+                
+                <ul className="list-none space-y-[12px]">
+                  {[
+                    "Unduh file APK menggunakan tombol di atas.",
+                    "Buka file APK dan izinkan opsi 'Instal dari Sumber Tidak Dikenal' jika diminta.",
+                    "Berikan izin 'App Pinning' (Penyematan Layar) agar sesi ujian aman dari gangguan.",
+                    "Nonaktifkan fitur Optimasi Baterai dan izinkan aplikasi tetap berjalan di latar belakang.",
+                    "Buka aplikasi dan ikuti petunjuk pengawas untuk memulai ujian."
+                  ].map((step, idx) => (
+                    <li key={idx} className="flex gap-[12px] text-[14px] leading-[1.5] text-[#475569]">
+                      <div className="flex-shrink-0 w-[22px] h-[22px] bg-[#ECFDF5] border border-[#10B981]/20 text-[#10B981] rounded-[50%] flex items-center justify-center text-[12px] font-[700]">
+                        {idx + 1}
+                      </div>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* macOS Card */}
               <div className="bg-[#FFFFFF] border border-[#E2E8F0] rounded-[12px] p-[28px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05),0_2px_4px_-2px_rgba(0,0,0,0.05)]">
                 <div className="flex items-center gap-[12px] mb-[20px] border-b border-[#E2E8F0] pb-[12px]">
